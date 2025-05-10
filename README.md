@@ -1,12 +1,56 @@
 # Efficient-Video-Object-Segmentation-with-Intelligent-Scissors-CONDENSATION-and-YOLO11n
 ## Section 1: Project Description
 
+## Overview
+This project introduces a **Segmentation-based Object Tracking (SOT)** framework designed to combine the strengths of classical computer vision techniques and modern deep learning approaches for efficient, accurate, and interpretable video object tracking.
+
+The system integrates:
+- **Intelligent Scissors** for user-guided, pixel-accurate segmentation,
+- A lightweight **CONDENSATION** (particle filter) algorithm for contour-based tracking,
+- **YOLOv11** for real-time evaluation using Intersection over Union (IoU) and center error metrics.
+
+## Key Features
+
+- **Interactive Segmentation**: The user outlines the target object using Intelligent Scissors enhanced with dynamic training and Canny-based edge detection.
+- **Robust Contour Tracking**: The CONDENSATION algorithm tracks the object contour with resilience to clutter and occlusion.
+- **Real-Time Evaluation**: Uses YOLOv11 object detection to evaluate tracking accuracy frame-by-frame without requiring manually annotated ground truth.
+
+## Performance Highlights
+
+- Achieved **∼97.5% reduction** in segmentation time by rewriting Intelligent Scissors in Cython.
+- Delivered **accurate tracking** across varied datasets including real-world and PASCAL VOC 2012 sequences.
+- Maintained **moderately good IoU scores (~0.7)** and **low center error** in cases of gradual motion and rigid object shapes.
+
+## Evaluation
+
+### Intelligent Scissors
+- Evaluated on 10 PASCAL VOC 2012 images.
+- Metrics:
+  - **SSIM**: 0.999997 (avg)
+  - **FSIM**: 0.784 (avg)
+  - **MSE**: 0.018 (avg)
+
+### CONDENSATION Tracking
+- Tested on 4 diverse video sequences.
+- Achieved consistent tracking with adaptive parameter tuning.
+- Visual overlap with YOLOv11 detections verified via bounding box conversion and comparison.
+
+## Constraints
+
+- Rigid object tracking only
+- No support for depth or rotation
+- Offline tracking; no real-time adaptation to new objects
+- Appearance assumed consistent throughout the video
+
+## Future Work
+
+- Extend to non-rigid and articulated object tracking
+- Incorporate 3D motion handling
+- Replace YOLOv11 with multi-object trackers or fine-tuned detectors
+- Deploy on embedded systems with real-time inference capabilities
 
 --
 ## Section 2: Project Set-up
-# Individual Dissertation 2024-2025: Code Setup Instructions
-
-Author: Anshali Manoharan
 
 This README provides the steps necessary to set up and run the **Efficient Video Object Segmentation with Intelligent Scissors, CONDENSATION and YOLO11n** project, including resolving common dependencies and errors related to OpenCV, Cython compilation, and OpenMP runtime issues.
 
