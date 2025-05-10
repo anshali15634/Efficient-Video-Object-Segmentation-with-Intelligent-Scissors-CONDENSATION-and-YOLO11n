@@ -18,7 +18,7 @@ The system integrates:
 ## Performance Highlights
 
 - Achieved **∼97.5% reduction** in segmentation time by rewriting Intelligent Scissors in Cython.
-- Delivered **accurate tracking** across varied datasets including real-world and PASCAL VOC 2012 sequences.
+- Delivered moderately good tracking and segmentation across varied datasets including real-world video sequences and and PASCAL VOC 2012 images.
 - Maintained **moderately good IoU scores (~0.7)** and **low center error** in cases of gradual motion and rigid object shapes.
 
 ## Evaluation
