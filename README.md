@@ -35,6 +35,10 @@ The system integrates:
 - Achieved consistent tracking with adaptive parameter tuning.
 - Visual overlap with YOLOv11 detections verified via bounding box conversion and comparison.
 
+![ezgif com-combine (1)](https://github.com/user-attachments/assets/0a867548-c591-4657-ba62-1453c455b675)
+
+
+
 ## Constraints
 
 - Rigid object tracking only
