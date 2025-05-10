@@ -36,7 +36,7 @@ The system integrates:
 - Visual overlap with YOLOv11 detections verified via bounding box conversion and comparison.
 
 ![ezgif com-combine (1)](https://github.com/user-attachments/assets/0a867548-c591-4657-ba62-1453c455b675)
-
+![ezgif com-combine (2)](https://github.com/user-attachments/assets/5fb4064b-67a6-4f80-9622-4212d584d583)
 
 
 ## Constraints
